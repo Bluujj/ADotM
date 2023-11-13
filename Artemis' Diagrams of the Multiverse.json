@@ -1,0 +1,162 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ArtemisDesignsoftheMultiverse",
+				"abbreviation": "ADotM",
+				"full": "Artemis' Diagrams of the Multiverse",
+				"url": "",
+				"authors": [
+					"Diana"
+				],
+				"convertedBy": [],
+				"color": "#c11c98"
+			}
+		]
+	},
+	"item": [
+		{
+			"name": "Ring of Skills",
+			"source": "ArtemisDesignsoftheMultiverse",
+			"page": 0,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"4 charges, use 1 charge to gain +1 to skills for 10 minutes. Recharges {@dice 1d4} charges at dawn."
+			]
+		},
+		{
+			"name": "Drained Luck Blade",
+			"source": "ArtemisDesignsoftheMultiverse",
+			"page": 0,
+			"rarity": "rare",
+			"bonusWeapon": "+1",
+			"bonusSavingThrow": "+1",
+			"entries": [
+				"You gain a +1 bonus to attack and damage rolls made with this magic weapon. While the sword is on your person, you also gain a +1 bonus to saving throws.",
+				{
+					"type": "entries",
+					"name": "Luck",
+					"entries": [
+						"If the sword is on your person, you can call on its luck (no action required) to reroll one attack roll, ability check, or saving throw you dislike. You must use the second roll. This property can't be used again until the next dawn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Wildsurge Girdle",
+			"source": "ArtemisDesignsoftheMultiverse",
+			"page": 0,
+			"rarity": "uncommon",
+			"wondrous": true,
+			"entries": [
+				"Riposte- {@action Attack} as a reaction when a creature misses you with an attack.",
+				"Roll {@dice 1d6} on Wildsurge table. half proficiency uses rounded up per long rest.",
+				{
+					"type": "table",
+					"colLabels": [
+						"d6",
+						"Wildsurge Effect"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"24 hours hair loss."
+						],
+						[
+							"2",
+							"level 1 booming blade"
+						],
+						[
+							"3",
+							"Pink Bubbles foam from your mouth when you try to speak for 1 minute."
+						],
+						[
+							"4",
+							"Creature who missed DC 15 wisdom. Speed reduced to 0 and must attack you on its turn. effect ends after its turn."
+						],
+						[
+							"5",
+							"5 temp hp"
+						],
+						[
+							"6",
+							"30ft radius light emits from you until start of next turn. Creatures who end their turn within 10ft of you are {@condition blinded} until the start of their next turn."
+						]
+					]
+				}
+			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Shadow Weapon",
+			"source": "ArtemisDesignsoftheMultiverse",
+			"page": 0,
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You weave together threads of shadow to create a weapon of solidified gloom in your hand. This magic weapon lasts until the spell ends. You can choose the form that this melee or ranged weapon takes each time you cast this spell (a rapier or a longbow), you must already be proficient with martial weapons.",
+				"If you create a rapier, it deals {@damage 2d8} psychic damage on a hit and has the finesse property. If you create a longbow, it deals {@damage 2d8} psychic damage on a hit and has the ranged property (range 150/600).",
+				"As a bonus action, you can change the form of the weapon between a rapier and a longbow while the spell persists.",
+				"If you drop the weapon, it dissipates at the end of your turn. Thereafter, while the spell is active, you can use a bonus action to cause the weapon to reappear in your hand."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a 3rd- or 4th-level spell slot, the damage increases to {@dice 3d8}. When you cast it using a 5th- or 6th-level spell slot, the damage increases to {@dice 4d8}. When you cast it using a spell slot of 7th level or higher, the damage increases to {@dice 5d8}."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"miscTags": [
+				"UBA"
+			]
+		}
+	],
+	"feat": [
+		{
+			"name": "Warblaster",
+			"source": "ArtemisDesignsoftheMultiverse",
+			"page": 0,
+			"entries": [
+				"When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature.",
+				"Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged Spell Attack rolls."
+			]
+		}
+	]
+}
